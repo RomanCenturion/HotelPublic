@@ -1,0 +1,60 @@
+﻿@model AnotherHotel.Models.Reservation
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.roomRented)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.roomRented)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.userRegistrator)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.userRegistrator)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dateOfAccomodation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dateOfAccomodation)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dateOfLeave)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dateOfLeave)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.includedBreakfast)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.includedBreakfast)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.allInclusive)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.allInclusive)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.priceOwed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.priceOwed)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.reservationID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
